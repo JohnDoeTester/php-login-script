@@ -1,4 +1,4 @@
-FROM mattrayner/lamp:latest-1804
+FROM tutum/lamp:latest
 COPY . /app
-ADD . /mysql
-CMD ["./run.sh"]
+EXPOSE 80 3306
+CMD ["/run.sh"]
